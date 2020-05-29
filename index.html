@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tetris</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>TETRIS</h1>
+        <div class="final">GAME OVER!<br><span id ="finaltext">FINAL SCORE:</span><span id="finalscore">0</span></div>
+        <div class="high-score">HIGH 
+            <br>SCORE:
+            <br><span id="high-score">0</span><br>
+        </div>
+        <div id="container">
+            <div id="grid"></div>
+            <div id="mini-grid"></div>
+        </div>
+        <h3>SCORE:<br>
+        <span id="score">0</span><br>
+        <br>
+        LINES:
+        <span id="line">0</span><br>
+        <br>
+        LEVEL:
+        <span id="level">0</span>
+        </h3>
+        <button type="button" id="start-button">PLAY</button>
+        <audio id="soundtrack" src="css/Tetris.mp3" type="audio/mpeg" loop="true"></audio>
+        <script type="text/javascript" src="script.js" ></script>
+    </body>
+</html> 
