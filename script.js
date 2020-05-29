@@ -291,6 +291,7 @@ startBtn.addEventListener('click', () => {
         lineDisplay.innerHTML = line;
         level = 0;
         levelDisplay.innerHTML = level;
+        highScoreDisplay.innerHTML = score; 
         miniSquares.forEach(square => {
             square.classList.remove('tetromino');
             square.classList.remove("taken");
@@ -391,7 +392,7 @@ function gameOver() {
             if (score > highscore) {
                 localStorage.setItem("highscore", score); 
                 finalTextDisplay.innerHTML = "NEW HIGH SCORE:";
-                highScoreDisplay.innerHTML = highscore;     
+                highScoreDisplay.innerHTML = score;     
             }
         }
         else{

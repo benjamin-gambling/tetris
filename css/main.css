@@ -110,14 +110,14 @@ h3 > span {
   }
 
   .final{
-    background-color: rgba(33,38,92,0.9);
+    background-color: rgba(33,38,92,0.95);
     font-size:5.5em;
     color: rgba(226,0,111,1);
     outline: 5px dotted white;
     text-shadow: 2px 2px white;
     position: fixed;
-    width: 100%;
-    height: auto;
+    width: 95%;
+    height: 575px;
     z-index: 2;
     display: flex;
     flex-flow: column;
@@ -125,7 +125,8 @@ h3 > span {
     justify-content: center;
     padding: 3vw 3vw 3vw 3vw;
     visibility: hidden;
-    top: 107px;
+    top: 100px;
+    left: -185px;
 }
 
 #finalscore {
