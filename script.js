@@ -26,10 +26,9 @@ function generateBoxes() {
         for(let i = 0; i < numBoxes; i++){
             gridBoxes[i] = document.createElement('div');
             gridBoxes[i].classList.add('gridBox');
-
             gridRows[j].appendChild(gridBoxes[i]);
         }
-    grid.appendChild(gridRows[j]);
+        grid.appendChild(gridRows[j]);
     }
 
     /* Creates divs that are not visible for the taken class */
@@ -291,7 +290,7 @@ startBtn.addEventListener('click', () => {
         lineDisplay.innerHTML = line;
         level = 0;
         levelDisplay.innerHTML = level;
-        highScoreDisplay.innerHTML = score; 
+        highScoreDisplay.innerHTML = highscore; 
         miniSquares.forEach(square => {
             square.classList.remove('tetromino');
             square.classList.remove("taken");
